@@ -1,0 +1,56 @@
+body {
+  background: #333;
+}
+
+.box {
+  background: #fff;
+  height: 200px;
+  width: 200px;
+
+  position: relative; /* in order to use params like top btm etc */
+
+  /* animation-name: animate1; */
+  /* animation name */
+
+  /* animation-duration: 2s; */
+  /* animation duration */
+  
+  /* animation-iteration-count: 1; */
+  /* animation repeating */
+  
+  /* animation-fill-mode: forwards; */
+  /* animation stay at the 'to' stage */
+  
+  /* animation-delay: 0s; */
+  /* animation  will delay to start */
+  
+  /* animation-direction: alternate; */
+  /* alternate-reverse - animation  will go reversed */
+  
+  /* animation-timing-function: ease-in-out; */
+  /* animation motion */
+
+  /* ONE WAY TO MAKE IT ALL TOGETHER */
+  
+  animation: animate1 5s forwards 1s ease-in-out;
+  /* first param: name of the animation */
+  /* second is the speed (duration) */
+  /* 3rd fill mode */
+  /* 4th will be delay */
+  /* 5the will be the timing fx (ease) */
+
+}
+
+@keyframes animate1 {
+  from {
+    width: 200px; /* not must since we start at 200px */
+    top: 0;
+  }
+
+  to {
+    width: 600px;
+    background-color: teal; /* will go from white to teal through color palette */
+    top: 300px;
+  }
+}
+
