@@ -1,0 +1,65 @@
+body {
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.box {
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  transition-property: background; /* specify which prop we want to have the transition */
+  transition-duration: 1s; /* depends on the event we specified, will give smoother effect */
+  /* transition-delay: 1s; */
+  transition-timing-function: ease-in-out;
+
+  /* OR in one prop */
+  transition: background, border-radius 1s ease-in-out;
+  
+  /* OR for ALL PROPS */
+  transition: all 1s ease-in-out;
+}
+
+.box:hover {
+  background: tomato;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}
+
+/* 
+  TRANSITIONAL PROPERTIES
+  -Properties that have an identifiable halfway point
+
+  background-color 
+  background-position 
+  border-color 
+  border-width 
+  border-spacing 
+  bottom 
+  color
+  font-size 
+  font-weight 
+  height left 
+  letter-spacing 
+  line-height 
+  margin 
+  max-height 
+  max-width 
+  min-height 
+  min-width 
+  opacity 
+  outline-color 
+  outline-offset 
+  outline-width 
+  padding right 
+  text-indent 
+  text-shadow 
+  top 
+  vertical-align 
+  visibility 
+  width 
+  word-spacing 
+  z-index */
